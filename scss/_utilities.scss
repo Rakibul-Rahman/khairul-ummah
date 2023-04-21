@@ -1,0 +1,27 @@
+// color
+$primary: #2C3333;
+$secondary: #395B64;
+$primary-2: #A5C9CA;
+$secondary-2: #E7F6F2;
+
+// font weight
+$fontRG:400;
+$fontMD:500;
+$fontBD:700;
+$fontBK:900;
+
+// container
+.container{
+    width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.section_heading{
+    font-size: 2rem;
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: $fontBD;
+    color: $primary;
+    padding: 40px 0;
+    text-align: center;
+}

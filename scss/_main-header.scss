@@ -1,0 +1,34 @@
+.main-header{
+    width: 100%;
+    background: $secondary-2;
+    padding: 7px 0;
+    & .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & .header_logo .logo{
+            width: 25px;
+        }
+
+        & .header-nav .nav-link{
+            font-family: "Merriweather Sans", sans-serif;
+            font-size: 1rem;
+            font-weight: $fontBD;
+            color: $primary;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        & .btn{
+            padding: 8px 10px;
+            font-family: "Merriweather Sans", sans-serif;
+            font-size: 1rem;
+            font-weight: $fontBD;
+            color: $secondary-2;
+            background: $primary;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}

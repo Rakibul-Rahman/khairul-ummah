@@ -1,0 +1,41 @@
+.islamic-event{
+    width: 100%;
+    height: 80vh;
+    background-color: $secondary-2;
+
+    & .islamic-event-heading{
+        & .event-name{
+            text-align: center;
+            font-family: 'Merriweather Sans', sans-serif;
+            font-size: 1.5rem;
+        }
+    }
+
+    & .counting-box{
+        width: 100%;
+        padding: 4rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        place-items: center;
+        background-color: #fff;
+        margin-top: 50px ;
+
+        & .count-time-box{
+            text-align: center;
+            width: 40%;
+            padding: 25px;
+
+            & .count-time{
+                font-family: 'Merriweather Sans', sans-serif;
+                font-size: 3rem;
+                color: $primary;
+            }
+
+            & .count{
+                margin-top: 20px;
+                text-align: center;
+                font-family: 'Merriweather Sans', sans-serif;
+            }
+        }
+    }
+}

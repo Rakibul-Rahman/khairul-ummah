@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #2c3333;
+  --primary-2: #a5c9ca;
+  --secondary: #395b64;
+  --secondary-2: #e7f6f2;
+}
+
+.btn {
+  padding: 8px 10px;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--secondary-2);
+  background: var(--primary);
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}

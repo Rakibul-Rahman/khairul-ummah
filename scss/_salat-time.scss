@@ -1,0 +1,46 @@
+.salat-time{
+    width: 100%;
+    height: 60vh;
+    background: url(/assets/salat-bg.png);
+    background-repeat: no-repeat;
+
+    & .salat_head_text{
+        h1{
+            font-size: 2rem;
+            font-family: "Merriweather Sans", sans-serif;
+            font-weight: $fontBD;
+            color: $primary;
+            padding: 40px 0;
+            text-align: center;
+        }
+    }
+
+    & .salat_items{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 5px;
+        & .salat_box {
+            background: $primary;
+            padding: 20px;
+
+            h3{
+                font-size: 1.5rem;
+                font-family: "Merriweather Sans", sans-serif;
+                color: #fff;
+                margin: 8px 0;
+            }
+
+            & .salat-text{
+                font-size: 1rem;
+                font-family: "Merriweather Sans", sans-serif;
+                font-weight: $fontRG;
+                margin: 5px 0;
+                color: #fff;
+            }
+        }
+
+        & .color {
+            background: $secondary;
+        }
+    }
+}

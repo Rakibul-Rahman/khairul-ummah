@@ -1,0 +1,364 @@
+.container {
+  width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.section_heading {
+  font-size: 2rem;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+  color: #2C3333;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.sub_header {
+  width: 100%;
+  padding: 10px 0;
+  background: #2C3333;
+}
+.sub_header .sub_header_items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sub_header .sub_header_items .sub_time {
+  display: flex;
+  justify-content: center;
+}
+.sub_header .sub_header_items .sub_time i {
+  color: #A5C9CA;
+  margin-right: 10px;
+  font-size: 1em;
+}
+.sub_header .sub_header_items .sub_time .time-content {
+  color: #A5C9CA;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 0.8em;
+}
+.sub_header .sub_header_items .sub_date {
+  color: #A5C9CA;
+}
+.sub_header .sub_header_items .sub_date i {
+  font-size: 1em;
+  margin-right: 10px;
+}
+.sub_header .sub_header_items .sub_date .date-content {
+  font-size: 1em;
+  font-family: "Merriweather Sans", sans-serif;
+}
+.sub_header .sub_header_items .sub_link .link_text {
+  font-size: 1em;
+  font-family: "Merriweather Sans", sans-serif;
+  color: #A5C9CA;
+  margin-right: 10px;
+}
+.sub_header .sub_header_items .sub_link .sub_link-up {
+  color: #2C3333;
+  background-color: #A5C9CA;
+  padding: 6px;
+  border-radius: 5px;
+  margin-left: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.main-header {
+  width: 100%;
+  background: #E7F6F2;
+  padding: 7px 0;
+}
+.main-header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-header .navbar .header_logo .logo {
+  width: 25px;
+}
+.main-header .navbar .header-nav .nav-link {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2C3333;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.main-header .navbar .btn {
+  padding: 8px 10px;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #E7F6F2;
+  background: #2C3333;
+  border: none;
+  cursor: pointer;
+}
+
+.home {
+  width: 100%;
+  height: 84vh;
+  background: url(/assets/bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.home .text_items h1 {
+  font-size: 4rem;
+  font-family: "MErriweather Sans", sans-serif;
+  font-weight: 700;
+  color: #2C3333;
+  line-height: 85px;
+}
+.home .text_items h3 {
+  font-size: 1.5rem;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 600;
+  color: #2C3333;
+  margin: 30px 0;
+}
+.home .text_items .btn:hover {
+  transform: translateY(-8%);
+  box-shadow: 0 5px 15px #2C3333;
+}
+
+.salat-time {
+  width: 100%;
+  height: 60vh;
+  background: url(/assets/salat-bg.png);
+  background-repeat: no-repeat;
+}
+.salat-time .salat_head_text h1 {
+  font-size: 2rem;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+  color: #2C3333;
+  padding: 40px 0;
+  text-align: center;
+}
+.salat-time .salat_items {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 5px;
+}
+.salat-time .salat_items .salat_box {
+  background: #2C3333;
+  padding: 20px;
+}
+.salat-time .salat_items .salat_box h3 {
+  font-size: 1.5rem;
+  font-family: "Merriweather Sans", sans-serif;
+  color: #fff;
+  margin: 8px 0;
+}
+.salat-time .salat_items .salat_box .salat-text {
+  font-size: 1rem;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 400;
+  margin: 5px 0;
+  color: #fff;
+}
+.salat-time .salat_items .color {
+  background: #395B64;
+}
+
+.seheri-and-ifter {
+  width: 100%;
+  height: 90vh;
+  background-color: #E7F6F2;
+}
+.seheri-and-ifter .seheri-ifter_text {
+  padding: 40px 0;
+  text-align: center;
+}
+.seheri-and-ifter .seheri-ifter_text h1 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #2C3333;
+  margin: 25px 0;
+}
+.seheri-and-ifter .seheri-ifter_text .day, .seheri-and-ifter .seheri-ifter_text .date, .seheri-and-ifter .seheri-ifter_text .year, .seheri-and-ifter .seheri-ifter_text .month, .seheri-and-ifter .seheri-ifter_text .arabic-date {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1.5rem;
+  color: #2C3333;
+  margin: 0 2px;
+}
+.seheri-and-ifter .time-box-container {
+  width: 100%;
+  padding: 1rem;
+  background-color: #395B64;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.seheri-and-ifter .time-box-container .time-container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+.seheri-and-ifter .time-box-container .time-container .seheri_and-ifter {
+  width: 80%;
+  height: auto;
+}
+.seheri-and-ifter .time-box-container .time-container .seheri_and-ifter h1 {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 20px;
+  font-family: "Merriweather Sans", sans-serif;
+  text-transform: uppercase;
+  color: #E7F6F2;
+  font-weight: 500;
+}
+.seheri-and-ifter .time-box-container .time-container .seheri_and-ifter .time-and-sun {
+  width: 100%;
+  height: auto;
+  background-color: #E7F6F2;
+  text-align: center;
+  padding: 4rem;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seheri-and-ifter .time-box-container .time-container .seheri_and-ifter .time-and-sun img {
+  width: 50px;
+  margin-right: 20px;
+}
+.seheri-and-ifter .time-box-container .time-container .seheri_and-ifter .time-and-sun .seheri_and_ifter-time {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #2C3333;
+}
+
+.audio-quran {
+  width: 100%;
+  height: 60vh;
+  background-image: url(/assets/salat-bg.png);
+  background-repeat: no-repeat;
+}
+.audio-quran .audio-quran_body-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+}
+.audio-quran .audio-quran_body-text h1 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 3rem;
+  color: #2C3333;
+}
+
+.islamic-event {
+  width: 100%;
+  height: 80vh;
+  background-color: #E7F6F2;
+}
+.islamic-event .islamic-event-heading .event-name {
+  text-align: center;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1.5rem;
+}
+.islamic-event .counting-box {
+  width: 100%;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  background-color: #fff;
+  margin-top: 50px;
+}
+.islamic-event .counting-box .count-time-box {
+  text-align: center;
+  width: 40%;
+  padding: 25px;
+}
+.islamic-event .counting-box .count-time-box .count-time {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 3rem;
+  color: #2C3333;
+}
+.islamic-event .counting-box .count-time-box .count {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.contact {
+  width: 100%;
+  height: 50vh;
+  background-color: #fff;
+  text-align: center;
+}
+.contact .contact-box {
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.contact .contact-box .send-message {
+  width: 40%;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  padding: 15px;
+  margin-right: 20px;
+  background-color: #E7F6F2;
+}
+.contact .contact-box .send-message::-moz-placeholder {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2C3333;
+}
+.contact .contact-box .send-message::placeholder {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2C3333;
+}
+.contact .send-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: #2C3333;
+  color: #fff;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.contact .send-btn:hover {
+  transform: translateY(-8%);
+  box-shadow: 0 5px 15px #2C3333;
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #E7F6F2;
+}
+.footer .footer-heading {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer-heading .footer-text {
+  font-size: 1rem;
+  font-family: "Merriweather Sans", sans-serif;
+  color: #2C3333;
+}
