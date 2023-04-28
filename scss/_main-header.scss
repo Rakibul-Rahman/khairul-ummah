@@ -1,34 +1,124 @@
 .main-header{
-    width: 100%;
-    background: $secondary-2;
-    padding: 7px 0;
+    max-width: 100%;
+    padding: 1rem 10%;
+    background-color: $secondary-2;
     & .navbar{
         display: flex;
         align-items: center;
         justify-content: space-between;
-
         & .header_logo .logo{
-            width: 25px;
+            width: 60%;
         }
-
-        & .header-nav .nav-link{
-            font-family: "Merriweather Sans", sans-serif;
-            font-size: 1rem;
-            font-weight: $fontBD;
-            color: $primary;
-            margin: 0 10px;
-            text-decoration: none;
+        & .mobile-bar{
+            display: none;
+            i{
+                font-size: 1.7rem;
+                color: $primary;
+            }
         }
-
+        & .header-nav{
+            & .nav-link{
+                margin: 0rem 1.2rem;
+                font-size: 1.5rem;
+                font-family: 'Merriweather Sans', sans-serif;
+                font-weight: $fontBD;
+                text-decoration: none;
+                color: $primary;
+                position: relative;
+            }
+            & .tag-hover::before{
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 0;
+                bottom: 0;
+                width: 0%;
+                height: 2px;
+                background-color: $primary;
+                transition: all 0.5s ease;
+            }
+            & .tag-hover:hover:before{
+                width: 100%;
+            }
+            & .tag-active::before{
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 2px;
+                background-color: $primary;
+                transition: all 0.5s ease;
+            }
+            & .tag-active:hover::before{
+                width: 0%;
+            }
+        }
         & .btn{
-            padding: 8px 10px;
-            font-family: "Merriweather Sans", sans-serif;
-            font-size: 1rem;
-            font-weight: $fontBD;
-            color: $secondary-2;
-            background: $primary;
-            border: none;
-            cursor: pointer;
+            font-size: 1.5rem;
+            font-family: 'Merriweather Sans', sans-serif;
+            transition: all 0.5s;
+        }
+        & .btn:hover {
+            box-shadow: 0 5px 10px $primary;
+            transform: translateY(-5%);
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .main-header{
+//     width: 100%;
+//     background: $secondary-2;
+//     padding: 7px 0;
+//     & .navbar{
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+
+//         & .header_logo .logo{
+//             width: 25px;
+//         }
+
+//         & .header-nav .nav-link{
+//             font-family: "Merriweather Sans", sans-serif;
+//             font-size: 1rem;
+//             font-weight: $fontBD;
+//             color: $primary;
+//             margin: 0 10px;
+//             text-decoration: none;
+//         }
+
+//         & .btn{
+//             padding: 8px 10px;
+//             font-family: "Merriweather Sans", sans-serif;
+//             font-size: 1rem;
+//             font-weight: $fontBD;
+//             color: $secondary-2;
+//             background: $primary;
+//             border: none;
+//             cursor: pointer;
+//         }
+//     }
+// }

@@ -14,8 +14,8 @@
 }
 
 .sub_header {
-  width: 100%;
-  padding: 10px 0;
+  max-width: 100%;
+  padding: 1.5rem 10%;
   background: #2C3333;
 }
 .sub_header .sub_header_items {
@@ -25,49 +25,55 @@
 }
 .sub_header .sub_header_items .sub_time {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 .sub_header .sub_header_items .sub_time i {
+  margin-right: 1rem;
+  font-size: 1.7rem;
   color: #A5C9CA;
-  margin-right: 10px;
-  font-size: 1em;
 }
 .sub_header .sub_header_items .sub_time .time-content {
-  color: #A5C9CA;
+  font-size: 1.5rem;
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 0.8em;
-}
-.sub_header .sub_header_items .sub_date {
+  font-weight: 500;
   color: #A5C9CA;
 }
 .sub_header .sub_header_items .sub_date i {
-  font-size: 1em;
-  margin-right: 10px;
+  font-size: 1.7rem;
+  margin-right: 1rem;
+  color: #A5C9CA;
 }
 .sub_header .sub_header_items .sub_date .date-content {
-  font-size: 1em;
+  font-size: 1.5rem;
   font-family: "Merriweather Sans", sans-serif;
+  font-weight: 500;
+  color: #A5C9CA;
 }
 .sub_header .sub_header_items .sub_link .link_text {
-  font-size: 1em;
+  font-size: 1.5rem;
   font-family: "Merriweather Sans", sans-serif;
+  font-weight: 500;
   color: #A5C9CA;
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 .sub_header .sub_header_items .sub_link .sub_link-up {
-  color: #2C3333;
+  padding: 1.2rem 1rem;
   background-color: #A5C9CA;
-  padding: 6px;
-  border-radius: 5px;
-  margin-left: 5px;
-  font-size: 1em;
-  cursor: pointer;
+  border-radius: 15%;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+.sub_header .sub_header_items .sub_link .sub_link-up i {
+  font-size: 1.5rem;
+  color: #2C3333;
+  text-align: center;
 }
 
 .main-header {
-  width: 100%;
-  background: #E7F6F2;
-  padding: 7px 0;
+  max-width: 100%;
+  padding: 1rem 10%;
+  background-color: #E7F6F2;
 }
 .main-header .navbar {
   display: flex;
@@ -75,51 +81,92 @@
   justify-content: space-between;
 }
 .main-header .navbar .header_logo .logo {
-  width: 25px;
+  width: 60%;
+}
+.main-header .navbar .mobile-bar {
+  display: none;
+}
+.main-header .navbar .mobile-bar i {
+  font-size: 1.7rem;
+  color: #2C3333;
 }
 .main-header .navbar .header-nav .nav-link {
+  margin: 0rem 1.2rem;
+  font-size: 1.5rem;
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 1rem;
   font-weight: 700;
-  color: #2C3333;
-  margin: 0 10px;
   text-decoration: none;
+  color: #2C3333;
+  position: relative;
+}
+.main-header .navbar .header-nav .tag-hover::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #2C3333;
+  transition: all 0.5s ease;
+}
+.main-header .navbar .header-nav .tag-hover:hover:before {
+  width: 100%;
+}
+.main-header .navbar .header-nav .tag-active::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #2C3333;
+  transition: all 0.5s ease;
+}
+.main-header .navbar .header-nav .tag-active:hover::before {
+  width: 0%;
 }
 .main-header .navbar .btn {
-  padding: 8px 10px;
+  font-size: 1.5rem;
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #E7F6F2;
-  background: #2C3333;
-  border: none;
-  cursor: pointer;
+  transition: all 0.5s;
+}
+.main-header .navbar .btn:hover {
+  box-shadow: 0 5px 10px #2C3333;
+  transform: translateY(-5%);
 }
 
 .home {
-  width: 100%;
-  height: 84vh;
+  max-width: 100%;
+  min-height: 84vh;
+  padding: 0 10%;
   background: url(/assets/bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
 .home .text_items h1 {
-  font-size: 4rem;
-  font-family: "MErriweather Sans", sans-serif;
+  font-size: 5rem;
+  font-family: "Merriweather Sans", sans-serif;
   font-weight: 700;
   color: #2C3333;
-  line-height: 85px;
+  line-height: 65px;
 }
 .home .text_items h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 600;
   color: #2C3333;
   margin: 30px 0;
+}
+.home .text_items .btn {
+  font-size: 1.5rem;
+  font-family: "Merriweather Sans", sans-serif;
 }
 .home .text_items .btn:hover {
   transform: translateY(-8%);
@@ -127,48 +174,45 @@
 }
 
 .salat-time {
-  width: 100%;
-  height: 60vh;
-  background: url(/assets/salat-bg.png);
-  background-repeat: no-repeat;
+  max-width: 100%;
+  min-height: 90vh;
+  background-color: #fff;
+  padding: 0 10%;
 }
-.salat-time .salat_head_text h1 {
-  font-size: 2rem;
-  font-family: "Merriweather Sans", sans-serif;
-  font-weight: 700;
-  color: #2C3333;
-  padding: 40px 0;
-  text-align: center;
+.salat-time .salat_head_text .section_heading {
+  font-size: 3rem;
 }
 .salat-time .salat_items {
+  justify-content: center;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 5px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 .salat-time .salat_items .salat_box {
+  padding: 4rem 2rem;
   background: #2C3333;
-  padding: 20px;
 }
 .salat-time .salat_items .salat_box h3 {
-  font-size: 1.5rem;
   font-family: "Merriweather Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
   color: #fff;
-  margin: 8px 0;
+  margin-bottom: 1rem;
 }
 .salat-time .salat_items .salat_box .salat-text {
-  font-size: 1rem;
   font-family: "Merriweather Sans", sans-serif;
-  font-weight: 400;
-  margin: 5px 0;
+  font-size: 1.2rem;
+  font-weight: 500;
   color: #fff;
 }
 .salat-time .salat_items .color {
-  background: #395B64;
+  background-color: #395B64;
 }
 
 .seheri-and-ifter {
-  width: 100%;
-  height: 90vh;
+  max-width: 100%;
+  min-height: 90vh;
+  padding: 0 10%;
   background-color: #E7F6F2;
 }
 .seheri-and-ifter .seheri-ifter_text {
@@ -177,7 +221,7 @@
 }
 .seheri-and-ifter .seheri-ifter_text h1 {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   text-transform: uppercase;
   font-weight: 400;
   color: #2C3333;
@@ -185,7 +229,7 @@
 }
 .seheri-and-ifter .seheri-ifter_text .day, .seheri-and-ifter .seheri-ifter_text .date, .seheri-and-ifter .seheri-ifter_text .year, .seheri-and-ifter .seheri-ifter_text .month, .seheri-and-ifter .seheri-ifter_text .arabic-date {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #2C3333;
   margin: 0 2px;
 }
@@ -193,10 +237,6 @@
   width: 100%;
   padding: 1rem;
   background-color: #395B64;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 .seheri-and-ifter .time-box-container .time-container {
   width: 100%;
@@ -215,6 +255,7 @@
   margin-bottom: 20px;
   font-family: "Merriweather Sans", sans-serif;
   text-transform: uppercase;
+  font-size: 2rem;
   color: #E7F6F2;
   font-weight: 500;
 }
@@ -241,64 +282,67 @@
 }
 
 .audio-quran {
-  width: 100%;
-  height: 60vh;
-  background-image: url(/assets/salat-bg.png);
-  background-repeat: no-repeat;
+  max-width: 100%;
+  min-height: 60vh;
+  padding: 0 10%;
+}
+.audio-quran .audio-quran-heading .section_heading {
+  font-size: 3rem;
 }
 .audio-quran .audio-quran_body-text {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding: 2rem;
   height: 250px;
+  background-color: #395B64;
 }
 .audio-quran .audio-quran_body-text h1 {
   font-family: "Merriweather Sans", sans-serif;
   font-size: 3rem;
-  color: #2C3333;
+  color: #fff;
 }
 
 .islamic-event {
   width: 100%;
-  height: 80vh;
+  min-height: 60vh;
   background-color: #E7F6F2;
+  padding: 0 10%;
+}
+.islamic-event .islamic-event-heading .section_heading {
+  font-size: 3rem;
 }
 .islamic-event .islamic-event-heading .event-name {
   text-align: center;
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .islamic-event .counting-box {
   width: 100%;
   padding: 4rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   place-items: center;
   background-color: #fff;
   margin-top: 50px;
+  justify-content: center;
 }
-.islamic-event .counting-box .count-time-box {
-  text-align: center;
-  width: 40%;
-  padding: 25px;
-}
-.islamic-event .counting-box .count-time-box .count-time {
+.islamic-event .counting-box .now-running-event .event {
+  font-size: 2.5rem;
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 3rem;
+  font-weight: 500;
   color: #2C3333;
-}
-.islamic-event .counting-box .count-time-box .count {
-  margin-top: 20px;
-  text-align: center;
-  font-family: "Merriweather Sans", sans-serif;
 }
 
 .contact {
   width: 100%;
-  height: 50vh;
+  min-height: 50vh;
+  padding: 0 10%;
   background-color: #fff;
   text-align: center;
+}
+.contact .contact-heading-text .section_heading {
+  font-size: 3rem;
 }
 .contact .contact-box {
   width: 100%;
@@ -309,7 +353,7 @@
   text-align: center;
 }
 .contact .contact-box .send-message {
-  width: 40%;
+  width: 50%;
   height: 40px;
   border: none;
   border-radius: 30px;
@@ -319,13 +363,13 @@
 }
 .contact .contact-box .send-message::-moz-placeholder {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #2C3333;
 }
 .contact .contact-box .send-message::placeholder {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #2C3333;
 }
@@ -336,7 +380,7 @@
   background-color: #2C3333;
   color: #fff;
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: all 0.4s ease;
 }
@@ -347,7 +391,8 @@
 
 .footer {
   width: 100%;
-  height: 10vh;
+  min-height: 10vh;
+  padding: 0 10%;
   background-color: #E7F6F2;
 }
 .footer .footer-heading {
@@ -358,7 +403,195 @@
   justify-content: center;
 }
 .footer .footer-heading .footer-text {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: "Merriweather Sans", sans-serif;
   color: #2C3333;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55.5%;
+  }
+}
+@media (max-width: 992px) {
+  .sub_header {
+    padding: 1.5rem 5%;
+  }
+  .main-header {
+    padding: 1rem 5%;
+  }
+}
+@media (max-width: 762px) {
+  .sub_header {
+    display: none;
+  }
+  .main-header {
+    padding: 0.5rem 4%;
+  }
+  .main-header .header_logo .logo {
+    width: 50% !important;
+  }
+  .main-header .navbar .mobile-bar {
+    display: block;
+  }
+  .main-header .navbar .header-nav {
+    position: absolute;
+    top: 9%;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #E7F6F2;
+    padding: 1rem 2%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+  }
+  .main-header .navbar .header-nav .nav-link {
+    display: block;
+    margin: 2rem 0;
+  }
+  .main-header .navbar .active {
+    transition-delay: 0s;
+    left: 0;
+  }
+  .main-header .navbar .btn {
+    display: none;
+  }
+  .home {
+    height: 100vh !important;
+  }
+  .salat-time {
+    padding: 0 5%;
+  }
+  .seheri-and-ifter {
+    padding: 0 5%;
+    height: 100vh !important;
+  }
+  .seheri-and-ifter .seheri-ifter_text h1 {
+    margin: 15px 0;
+  }
+  .seheri-and-ifter .time-container {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .audio-quran {
+    padding: 0 5%;
+  }
+  .audio-quran .audio-quran-heading .section_heading {
+    font-size: 2.5rem;
+    padding: 30px 0;
+  }
+  .islamic-event {
+    padding: 0 5%;
+    min-height: 50vh !important;
+  }
+  .islamic-event .islamic-event-heading .section_heading {
+    font-size: 2.5rem;
+    padding: 30px 0;
+  }
+  .islamic-event .islamic-event-heading .event-name {
+    font-size: 1.5rem;
+  }
+  .contact {
+    padding: 0 5%;
+    min-height: 40vh !important;
+  }
+  .contact .contact-heading-text .section_heading {
+    font-size: 2.5rem;
+    padding: 30px 0;
+  }
+  .contact .contact-box .send-message {
+    width: 70%;
+    padding: 20px;
+  }
+  .contact .contact-box .send-message::-moz-placeholder {
+    font-size: 1.5rem;
+  }
+  .contact .contact-box .send-message::placeholder {
+    font-size: 1.5rem;
+  }
+  .contact .send-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .home .text_items h1 {
+    font-size: 3rem;
+    font-family: "MErriweather Sans", sans-serif;
+    font-weight: 700;
+    color: #2C3333;
+    line-height: 40px;
+  }
+  .salat-time .salat_head_text .section_heading {
+    font-size: 2.5rem;
+    padding: 30px 0;
+  }
+  .salat-time .salat_items {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 50px;
+  }
+  .salat-time .salat_items .salat_box h3 {
+    font-size: 1.5rem;
+  }
+  .salat-time .salat_items .salat_box .salat-text {
+    font-size: 1rem;
+  }
+  .seheri-and-ifter {
+    height: 100vh !important;
+  }
+  .seheri-and-ifter .seheri-ifter_text {
+    padding: 20px 0;
+  }
+  .seheri-and-ifter .seheri-ifter_text h1 {
+    font-size: 2.5rem;
+  }
+  .seheri-and-ifter .seheri-ifter_text .day, .seheri-and-ifter .seheri-ifter_text .date, .seheri-and-ifter .seheri-ifter_text .year, .seheri-and-ifter .seheri-ifter_text .month, .seheri-and-ifter .seheri-ifter_text .arabic-date {
+    font-size: 1.5rem;
+  }
+  .seheri-and-ifter .time-box-container .time-container .seheri_and-ifter h1 {
+    font-size: 1.8rem;
+  }
+  .seheri-and-ifter .time-box-container .time-container .seheri_and-ifter .time-and-sun img {
+    width: 40px;
+  }
+  .seheri-and-ifter .time-box-container .time-container .seheri_and-ifter .time-and-sun .seheri_and_ifter-time {
+    font-size: 1.6rem;
+  }
+  .audio-quran {
+    min-height: 50vh !important;
+  }
+  .audio-quran .audio-quran-heading .section_heading {
+    font-size: 2.5rem;
+    padding: 30px 0;
+  }
+  .audio-quran .audio-quran_body-text {
+    padding: 1rem 0;
+    height: 150px;
+  }
+  .audio-quran .audio-quran_body-text h1 {
+    font-size: 1.5rem;
+  }
+  .islamic-event .islamic-event-heading .section_heading {
+    font-size: 2.5rem;
+    padding: 30px 0;
+  }
+  .islamic-event .islamic-event-heading .event-name {
+    font-size: 1.5rem;
+  }
+  .islamic-event .counting-box {
+    margin-top: 20px !important;
+  }
+  .islamic-event .counting-box .now-running-event .event {
+    font-size: 1.5rem;
+  }
+  .contact .contact-box .send-message {
+    width: 100%;
+    padding: 20px;
+  }
+  .footer {
+    padding: 0 5%;
+  }
+  .footer .footer-heading .footer-text {
+    font-size: 1.2rem;
+  }
 }

@@ -1,1 +1,273 @@
+@media (max-width: 1200px) {
 
+    // html font size
+    html {
+        font-size: 55.5%;
+    }
+}
+
+@media  (max-width: 992px) {
+
+    // sub header responsive
+    .sub_header {
+        padding: 1.5rem 5%;
+    }
+
+    // main header responsive
+    .main-header{
+        padding: 1rem 5%;
+    }
+}
+
+// mobile, tablet responsive
+
+@media (max-width: 762px) {
+
+    // sub header responsive
+    .sub_header{
+        display: none;
+    }
+
+    // main header responsive
+    .main-header{
+        padding: 0.5rem 4%;
+        & .header_logo .logo{
+            width: 50% !important;
+        }
+        & .navbar{
+            & .mobile-bar{
+                display: block;
+            }
+            & .header-nav{
+                position: absolute;
+                top: 9%;
+                left: -100%;
+                width: 100%;
+                height: 100vh;
+                background-color: $secondary-2;
+                padding: 1rem 2%;
+                display: flex;
+                flex-direction: column;
+                transition: all 0.5s ease;
+                & .nav-link{
+                    display: block ;
+                    margin: 2rem 0;
+                }
+            }
+            & .active{
+                transition-delay: 0s;
+                left: 0;
+            }
+            & .btn{
+                display: none;
+            }
+        }
+    }
+
+    // home section responsive
+    .home{
+        height: 100vh !important;
+    }
+
+    // salat time responsive 
+    .salat-time{
+        padding: 0 5%;
+    }
+
+
+    // seheri and ifter responsive 
+    .seheri-and-ifter{
+        padding: 0 5%;
+        height: 100vh !important;
+        & .seheri-ifter_text{
+            h1{
+                margin: 15px 0;
+            }
+        }
+        & .time-container{
+            grid-template-columns: repeat(1, 1fr) !important;
+        }
+    }
+
+    //audio quran responsive
+    .audio-quran{
+        padding: 0 5%;
+        & .audio-quran-heading{
+            & .section_heading{
+                font-size: 2.5rem;
+                padding: 30px 0;
+            }
+        }
+    }
+
+    // islamic event responsive
+    .islamic-event{
+        padding: 0 5%;
+        min-height: 50vh !important;
+        & .islamic-event-heading {
+            & .section_heading {
+                font-size: 2.5rem;
+                padding: 30px 0;
+            }
+        
+            & .event-name {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    // contact responsive
+    .contact{
+        padding: 0 5%;
+        min-height: 40vh !important;
+        & .contact-heading-text {
+            & .section_heading {
+                    font-size: 2.5rem;
+                    padding: 30px 0;
+            }
+        }
+        & .contact-box{
+            & .send-message{
+                width: 70%;
+                padding: 20px;
+            }
+            & .send-message::placeholder{
+                font-size: 1.5rem;
+            }
+        }
+        & .send-btn{
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
+    }
+}
+
+// mobile screen
+@media (max-width: 576px) {
+
+    // home responsive size
+    .home{
+        & .text_items {
+            h1{
+                font-size: 3rem;
+                font-family: "MErriweather Sans", sans-serif;
+                font-weight: $fontBD;
+                color: $primary;
+                line-height: 40px;
+            }
+        }
+    }
+
+    // salat time section responsive
+    .salat-time{
+        & .salat_head_text{
+            & .section_heading{
+                font-size: 2.5rem;
+                padding: 30px 0;
+            }
+        }
+        & .salat_items{
+            grid-template-columns: repeat(1, 1fr);
+            margin-bottom: 50px;
+            & .salat_box{
+                h3{
+                    font-size: 1.5rem;
+                }
+                & .salat-text{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    // seheri and ifter responsive 
+    .seheri-and-ifter{
+        height: 100vh !important;
+        & .seheri-ifter_text{
+            padding: 20px 0;
+            h1{
+                font-size: 2.5rem;
+            }
+            & .day, .date, .year, .month, .arabic-date{
+                font-size: 1.5rem;
+            }
+        }
+        & .time-box-container{
+            & .time-container{
+                & .seheri_and-ifter{
+                    h1{
+                        font-size: 1.8rem;
+                    }
+                    & .time-and-sun{
+                        & img{
+                            width: 40px;
+                        }
+                        & .seheri_and_ifter-time{
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //audio quran responsive
+    .audio-quran{
+        min-height: 50vh !important;
+        & .audio-quran-heading{
+            & .section_heading {
+                font-size: 2.5rem;
+                padding: 30px 0;
+            }
+        }
+        & .audio-quran_body-text{
+            padding: 1rem 0;
+            height: 150px;
+            & h1{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    //islamic event responsive
+    .islamic-event{
+        & .islamic-event-heading {
+            & .section_heading {
+                font-size: 2.5rem;
+                padding: 30px 0;
+            }
+        
+            & .event-name {
+                font-size: 1.5rem;
+            }
+        }
+        & .counting-box{
+            margin-top: 20px !important;
+            & .now-running-event {
+                & .event {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    //contact section responsive
+        .contact {
+        & .contact-box {
+            & .send-message {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    }
+
+    // footer responsive
+    .footer{
+        padding: 0 5%;
+        & .footer-heading{
+            & .footer-text{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

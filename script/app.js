@@ -1,3 +1,22 @@
+// responsive navbar
+
+var mobileNav = document.getElementById('nav-items');
+var mobileBar = document.getElementById('bar');
+
+mobileBar.addEventListener('click', () => {
+    mobileBar.classList.toggle('fa-xmark');
+    mobileNav.classList.toggle('active');
+});
+
+// responsive nav tag active
+
+var navLink = document.querySelectorAll('.nav-link');
+
+navLink.forEach(n => n.addEventListener('click', () => {
+    mobileBar.classList.remove('fa-xmark');
+    mobileNav.classList.remove('active');
+}));
+
 // sub header clock
 
 var digitHours = document.getElementById("hour_time");
@@ -25,7 +44,6 @@ function subClock() {
     digitHours.innerText = nowHours;
     digitMinutes.innerText = nowMinutes;
 };
-
 setInterval(subClock, 1000);
 subClock();
 
@@ -63,56 +81,56 @@ date_box();
 
 //counter day code
 
-var count_day = document.getElementById('count_day');
-var count_hour = document.getElementById('count_hour');
-var count_min = document.getElementById('count_min');
-var count_sec = document.getElementById('count_sec');
-var target = ("22 April, 2023 00:00:00");
+// var count_day = document.getElementById('count_day');
+// var count_hour = document.getElementById('count_hour');
+// var count_min = document.getElementById('count_min');
+// var count_sec = document.getElementById('count_sec');
+// var target = ("22 April, 2023 00:00:00");
 
-function countDate() {
-    var count_date = new Date("April 21, 2023 06:25:59 pm").getTime();
-    var now = new Date().getTime();
-    var divider_counter = count_date - now;
+// function countDate() {
+//     var count_date = new Date("April 21, 2023 06:25:59 pm").getTime();
+//     var now = new Date().getTime();
+//     var divider_counter = count_date - now;
 
-    // time generate
+//     // time generate
 
-    var second = 1000;
-    var minutes = second * 60;
-    var hour = minutes * 60;
-    var day = hour * 24;
+//     var second = 1000;
+//     var minutes = second * 60;
+//     var hour = minutes * 60;
+//     var day = hour * 24;
 
-    // day set
+//     // day set
 
-    var setDay = Math.floor(divider_counter / day);
-    var setHour = Math.floor((divider_counter % day) / hour);
-    var setMinutes = Math.floor((divider_counter % hour) / minutes);
-    var setSecond = Math.floor((divider_counter % minutes) / second);
+//     var setDay = Math.floor(divider_counter / day);
+//     var setHour = Math.floor((divider_counter % day) / hour);
+//     var setMinutes = Math.floor((divider_counter % hour) / minutes);
+//     var setSecond = Math.floor((divider_counter % minutes) / second);
 
-    // final set counter
+//     // final set counter
 
-    // proper time set
+//     // proper time set
 
-    if (setDay < 10) {
-        setDay = '0' + setDay;
-    }
+//     if (setDay < 10) {
+//         setDay = '0' + setDay;
+//     }
 
-    if (setHour < 10) {
-        setHour = '0' + setHour;
-    }
+//     if (setHour < 10) {
+//         setHour = '0' + setHour;
+//     }
 
-    if (setMinutes < 10) {
-        setMinutes = '0' + setMinutes;
-    }
+//     if (setMinutes < 10) {
+//         setMinutes = '0' + setMinutes;
+//     }
 
-    if (setSecond < 10) {
-        setSecond = '0' + setSecond
-    }
+//     if (setSecond < 10) {
+//         setSecond = '0' + setSecond
+//     }
 
-    //html time print
+//     //html time print
 
-    count_day.innerText = setDay;
-    count_hour.innerText = setHour;
-    count_min.innerText = setMinutes;
-    count_sec.innerText = setSecond;
-}
-setInterval(countDate, 1000);
+//     count_day.innerText = setDay;
+//     count_hour.innerText = setHour;
+//     count_min.innerText = setMinutes;
+//     count_sec.innerText = setSecond;
+// }
+// setInterval(countDate, 1000);

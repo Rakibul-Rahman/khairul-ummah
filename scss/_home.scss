@@ -1,31 +1,36 @@
 .home{
-    width: 100%;
-    height: 84vh;
+    max-width: 100%;
+    min-height: 84vh;
+    padding: 0 10%;
     background: url(/assets/bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
 
     & .text_items{
         h1{
-            font-size: 4rem;
-            font-family: "MErriweather Sans", sans-serif;
+            font-size: 5rem;
+            font-family: "Merriweather Sans", sans-serif;
             font-weight: $fontBD;
             color: $primary;
-            line-height: 85px;
+            line-height: 65px;
         }
         h3{
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-family:  "Merriweather Sans", sans-serif;
             font-weight: 600;
             color: $primary;
             margin: 30px 0;
         }
-
-        .btn:hover{
+        & .btn{
+            font-size: 1.5rem;
+            font-family: 'Merriweather Sans', sans-serif;
+        }
+        & .btn:hover{
             transform: translateY(-8%);
             box-shadow: 0 5px 15px $primary;
         }

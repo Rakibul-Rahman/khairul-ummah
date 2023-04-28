@@ -1,6 +1,7 @@
 .seheri-and-ifter{
-    width: 100%;
-    height: 90vh;
+    max-width: 100%;
+    min-height: 90vh;
+    padding: 0 10%;
     background-color: $secondary-2;
     & .seheri-ifter_text{
         padding: 40px 0;
@@ -8,7 +9,7 @@
 
         h1{
             font-family: 'Merriweather Sans', sans-serif;
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             text-transform: uppercase;
             font-weight: $fontRG;
             color: $primary;
@@ -17,7 +18,7 @@
 
         & .day, .date, .year, .month, .arabic-date{
             font-family: 'Merriweather Sans', sans-serif;
-            font-size: 1.5rem;
+            font-size: 2rem;
             color: $primary;
             margin: 0 2px;
         }
@@ -27,11 +28,6 @@
         width: 100%;
         padding: 1rem;
         background-color: $secondary;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
         & .time-container{
             width: 100%;
             height: auto;
@@ -44,13 +40,13 @@
                 width: 80%;
                 height: auto;
                 // background-color: $secondary;
-
                 h1{
                     text-align: center;
                     padding: 1rem;
                     margin-bottom: 20px;
                     font-family: "Merriweather Sans", sans-serif;
                     text-transform: uppercase;
+                    font-size: 2rem;
                     color: $secondary-2;
                     font-weight: $fontMD;
                 }

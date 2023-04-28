@@ -1,6 +1,6 @@
 .sub_header{
-    width: 100%;
-    padding: 10px 0;
+    max-width: 100%;
+    padding: 1.5rem 10%;
     background: $primary;
     & .sub_header_items{
         display: flex;
@@ -8,52 +8,141 @@
         justify-content: space-between;
         & .sub_time{
             display: flex;
+            align-items: center;
             justify-content: center;
-            & i{
+            i {
+                margin-right: 1rem;
+                font-size: 1.7rem;
                 color: $primary-2;
-                margin-right: 10px;
-                font-size: 1em;
             }
-
             & .time-content{
+                font-size: 1.5rem;
+                font-family: 'Merriweather Sans', sans-serif;
+                font-weight: $fontMD;
                 color: $primary-2;
-                font-family: "Merriweather Sans", sans-serif;
-                font-size: 0.8em;
             }
         }
-
         & .sub_date{
-            color: $primary-2;
-            & i{
-                font-size: 1em;
-                margin-right: 10px;
+            i{
+                font-size: 1.7rem;
+                margin-right: 1rem;
+                color: $primary-2;
             }
-
             & .date-content{
-                font-size: 1em;
-                font-family: "Merriweather Sans", sans-serif;
+                font-size: 1.5rem;
+                font-family: 'Merriweather Sans', sans-serif;
+                font-weight: $fontMD;
+                color: $primary-2;
             }
         }
-
-        & .sub_link {
-
+        & .sub_link{
             & .link_text{
-                font-size: 1em;
-                font-family: "Merriweather Sans", sans-serif;
+                font-size: 1.5rem;
+                font-family: 'Merriweather Sans', sans-serif;
+                font-weight: $fontMD;
                 color: $primary-2;
-                margin-right: 10px;
+                margin-right: 1rem;
             }
-
             & .sub_link-up{
-                color: $primary;
+                padding: 1.2rem 1rem;
                 background-color: $primary-2;
-                padding: 6px;
-                border-radius: 5px;
-                margin-left: 5px;
-                font-size: 1em;
-                cursor: pointer;
+                border-radius: 15%;
+                text-decoration: none;
+                margin-left: 0.5rem;
+                i{
+                    font-size: 1.5rem;
+                    color: $primary;
+                    text-align: center;
+                }
             }
-            
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .sub_header{
+//     width: 100%;
+//     padding: 10px 0;
+//     background: $primary;
+//     & .sub_header_items{
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         & .sub_time{
+//             display: flex;
+//             justify-content: center;
+//             & i{
+//                 color: $primary-2;
+//                 margin-right: 10px;
+//                 font-size: 1em;
+//             }
+
+//             & .time-content{
+//                 color: $primary-2;
+//                 font-family: "Merriweather Sans", sans-serif;
+//                 font-size: 0.8em;
+//             }
+//         }
+
+//         & .sub_date{
+//             color: $primary-2;
+//             & i{
+//                 font-size: 1em;
+//                 margin-right: 10px;
+//             }
+
+//             & .date-content{
+//                 font-size: 1em;
+//                 font-family: "Merriweather Sans", sans-serif;
+//             }
+//         }
+
+//         & .sub_link {
+
+//             & .link_text{
+//                 font-size: 1em;
+//                 font-family: "Merriweather Sans", sans-serif;
+//                 color: $primary-2;
+//                 margin-right: 10px;
+//             }
+
+//             & .sub_link-up{
+//                 color: $primary;
+//                 background-color: $primary-2;
+//                 padding: 6px;
+//                 border-radius: 5px;
+//                 margin-left: 5px;
+//                 font-size: 1em;
+//                 cursor: pointer;
+//             }
+            
+//         }
+//     }
+// }

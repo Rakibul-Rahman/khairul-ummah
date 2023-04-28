@@ -1,20 +1,24 @@
 .audio-quran{
-    width: 100%;
-    height: 60vh;
-    background-image: url(/assets/salat-bg.png);
-    background-repeat: no-repeat;
-
+    max-width: 100%;
+    min-height: 60vh;
+    padding: 0 10%;
+    & .audio-quran-heading{
+        & .section_heading{
+            font-size: 3rem;
+        }
+    }
     & .audio-quran_body-text{
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
+        padding: 2rem;
         height: 250px;
-
+        background-color: $secondary;
         & h1{
             font-family: 'Merriweather Sans', sans-serif;
             font-size: 3rem;
-            color: $primary;
+            color: #fff;
         }
     }
 }
